@@ -1,0 +1,160 @@
+DirectoryIndex index.php
+RewriteEngine On
+php_flag display_errors off 
+php_flag display_startup_errors off
+
+# Основной домен
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Главная
+RewriteRule ^index.html$ index.php [L]
+
+# Правила
+RewriteRule ^rules(/?)+$ index.php?menu=rules [L]
+
+# Контакты
+RewriteRule ^contacts(/?)+$ index.php?menu=contacts [L]
+
+# Новости
+RewriteRule ^news(/?)+$ index.php?menu=news [L]
+
+# О нас
+RewriteRule ^about(/?)+$ index.php?menu=about [L]
+
+# Помощь
+RewriteRule ^help(/?)+$ index.php?menu=help [L]
+RewriteRule ^help/id/([0-9]+)(/?)+$ index.php?menu=help&id=$1 [L]
+
+# Вход
+RewriteRule ^login(/?)+$ index.php?menu=login [L]
+
+# Регистрация
+RewriteRule ^signup/key/(.*)(/?)+$ index.php?menu=signup&key=$1 [L]
+RewriteRule ^signup(/?)+$ index.php?menu=signup [L]
+
+# Восстановление пароля
+RewriteRule ^recovery(/?)+$ index.php?menu=recovery [L]
+
+# Последние выплаты
+RewriteRule ^payments(/?)+$ index.php?menu=payments [L]
+
+# Видео ютуб
+RewriteRule ^youtube(/?)+$ index.php?menu=youtube [L]
+
+#Мгновенная лотерея
+RewriteRule ^account/lotterym(/?)+$ index.php?menu=account&sel=lotterym [QSA]
+RewriteRule ^lotm(/?)+$ /load/lotery.php [L]
+RewriteRule ^startm(/?)+$ /load/server_lotom.php [QSA]
+
+#Отзывы
+RewriteRule ^otziv(/?)+$ index.php?menu=otziv [L]
+RewriteRule ^otziv/([0-9]+)(/?)+$ index.php?menu=otziv&page=$1 [L]
+
+# Пользователи
+RewriteRule ^users/([0-9]+)(/?)+$ index.php?menu=users&page=$1 [L]
+RewriteRule ^users(/?)+$ index.php?menu=users [L]
+
+# Аккаунт
+RewriteRule ^account/chat(/?)+$ index.php?menu=account&sel=chat [L]
+RewriteRule ^account/chat/noban/([a-zA-Z0-9]+)(/?)+$ index.php?menu=account&sel=chat&noban=$1 [L]
+RewriteRule ^account/bar(/?)+$ index.php?menu=account&sel=bar [L]
+RewriteRule ^account/trade(/?)+$ index.php?menu=account&sel=trade [L]
+RewriteRule ^account/kazarma(/?)+$ index.php?menu=account&sel=kazarma [L]
+RewriteRule ^account/kazna(/?)+$ index.php?menu=account&sel=kazna [L]
+RewriteRule ^account/igrun(/?)+$ index.php?menu=account&sel=igrun [L]
+RewriteRule ^account/power(/?)+$ index.php?menu=account&sel=power [L]
+RewriteRule ^account/power1(/?)+$ index.php?menu=account&sel=power1 [L]
+RewriteRule ^account/pilorama(/?)+$ index.php?menu=account&sel=pilorama [L]
+RewriteRule ^account/melnica(/?)+$ index.php?menu=account&sel=melnica [L]
+RewriteRule ^account/instruktor(/?)+$ index.php?menu=account&sel=instruktor [L]
+RewriteRule ^account/kolbasniyceh(/?)+$ index.php?menu=account&sel=kolbasniyceh [L]
+RewriteRule ^account/shashlichnaya(/?)+$ index.php?menu=account&sel=shashlichnaya [L]
+RewriteRule ^account/kirpichzavod(/?)+$ index.php?menu=account&sel=kirpichzavod [L]
+RewriteRule ^account/liteyniyzavod(/?)+$ index.php?menu=account&sel=liteyniyzavod [L]
+RewriteRule ^account/pekarna(/?)+$ index.php?menu=account&sel=pekarna [L]
+RewriteRule ^account/pivovarna(/?)+$ index.php?menu=account&sel=pivovarna [L]
+RewriteRule ^account/insertwm(/?)+$ index.php?menu=account&sel=insertwm [L]
+RewriteRule ^account/bonus(/?)+$ index.php?menu=account&sel=bonus [L]
+RewriteRule ^account/credit(/?)+$ index.php?menu=account&sel=credit [L]
+RewriteRule ^account/config(/?)+$ index.php?menu=account&sel=config [L]
+RewriteRule ^account/pole(/?)+$ index.php?menu=account&sel=pole [L]
+RewriteRule ^account/insert(/?)+$ index.php?menu=account&sel=insert [L]
+RewriteRule ^account/insertp(/?)+$ index.php?menu=account&sel=insertp [L]
+RewriteRule ^account/insertf(/?)+$ index.php?menu=account&sel=insertf [L]
+RewriteRule ^account/payment/([0-9]+)(/?)+$ index.php?menu=account&sel=payment&pay_id=$1 [L]
+RewriteRule ^account/payment(/?)+$ index.php?menu=account&sel=payment [L]
+RewriteRule ^account/market(/?)+$ index.php?menu=account&sel=market [L]
+RewriteRule ^account/swap(/?)+$ index.php?menu=account&sel=swap [L]
+RewriteRule ^account/store(/?)+$ index.php?menu=account&sel=store [L]
+RewriteRule ^account/sklad(/?)+$ index.php?menu=account&sel=sklad [L]
+RewriteRule ^account/referals(/?)+$ index.php?menu=account&sel=referals [L]
+RewriteRule ^account/farm(/?)+$ index.php?menu=account&sel=farm [L]
+RewriteRule ^account/farm2(/?)+$ index.php?menu=account&sel=farm2 [L]
+RewriteRule ^account/farm3(/?)+$ index.php?menu=account&sel=farm3 [L]
+RewriteRule ^account/exit(/?)+$ index.php?menu=account&sel=exit [L]
+RewriteRule ^account/wm_insert(/?)+$ index.php?menu=account&sel=wm_insert [L]
+RewriteRule ^account(/?)+$ index.php?menu=account [L]
+RewriteRule ^account/swland(/?)+$ index.php?menu=account&sel=swland [L]
+RewriteRule ^account/swland/([0-9]+)(/?)+$ index.php?menu=account&sel=swland&id=$1 [L]
+RewriteRule ^competition(/?)+$ index.php?menu=competition [L]
+RewriteRule ^competition/list(/?)+$ index.php?menu=competition&list [L]
+RewriteRule ^top(/?)+$ index.php?menu=top [L]
+RewriteRule ^top/([0-9]+)(/?)+$ index.php?menu=top&page=$1 [L]
+RewriteRule ^account/matrix(/?)+$ index.php?menu=account&sel=matrix [L]
+RewriteRule ^account/pin(/?)+$ index.php?menu=account&sel=pin [L]
+RewriteRule ^account/coinflip(/?)+$ index.php?menu=account&sel=coinflip [L]
+RewriteRule ^account/kamikadze2(/?)+$ index.php?menu=account&sel=kamikadze2 [L]
+
+#Внутренняя почта
+RewriteRule ^account/pm(/?)+$ index.php?menu=account&sel=pm [L]
+RewriteRule ^account/pm/inbox(/?)+$ index.php?menu=account&sel=pm&inbox [L]
+RewriteRule ^account/pm/outbox(/?)+$ index.php?menu=account&sel=pm&outbox [L]
+RewriteRule ^account/pm/referals(/?)+$ index.php?menu=account&sel=pm&referals [L]
+
+#Стена пользака
+RewriteRule ^account/wall/([-a-zA-Z0-9_]+)(/?)+$ index.php?menu=account&sel=wall&name=$1 [L]
+RewriteRule ^account/wall(/?)+$ index.php?menu=account&sel=wall [L]
+RewriteRule ^account/wall_serch(/?)+$ index.php?menu=account&sel=wall_serch [L]
+
+#Тикеты
+RewriteRule ^account/ticket(/?)+$ index.php?menu=account&sel=ticket [L]
+RewriteRule ^account/ticket/id/([0-9]+)(/?)+$ index.php?menu=account&sel=ticket&id=$1 [L]
+RewriteRule ^account/newticket(/?)+$ index.php?menu=account&sel=new_ticket [L]
+
+#Элексир
+RewriteRule ^account/elixir(/?)+$ index.php?menu=account&sel=elixir [L]
+
+#Админские ссылки
+
+RewriteRule ^admin/qiwi_insert(/?)+$ admin/index.php?menu=_qiwi_insert.php [L]
+RewriteRule ^admin/ticket/id/([0-9]+)(/?)+$ admin/index.php?menu=ticket&id=$1 [L]
+RewriteRule ^admin/ticket(/?)+$ admin/index.php?menu=ticket [L]
+RewriteRule ^admin/stats(/?)+$ admin/index.php?menu=stats [L]
+RewriteRule ^admin/config(/?)+$ admin/index.php?menu=config [L]
+RewriteRule ^admin/contacts(/?)+$ admin/index.php?menu=contacts [L]
+RewriteRule ^admin/rules(/?)+$ admin/index.php?menu=rules [L]
+RewriteRule ^admin/about(/?)+$ admin/index.php?menu=about [L]
+RewriteRule ^admin/story_buy(/?)+$ admin/index.php?menu=story_buy [L]
+RewriteRule ^admin/story_swap(/?)+$ admin/index.php?menu=story_swap [L]
+RewriteRule ^admin/story_insert(/?)+$ admin/index.php?menu=story_insert [L]
+RewriteRule ^admin/story_sell(/?)+$ admin/index.php?menu=story_sell [L]
+RewriteRule ^admin/news(/?)+$ admin/index.php?menu=news [L]
+RewriteRule ^admin/users(/?)+$ admin/index.php?menu=users [L]
+RewriteRule ^admin/sender(/?)+$ admin/index.php?menu=sender [L]
+RewriteRule ^admin/payments(/?)+$ admin/index.php?menu=payments [L]
+RewriteRule ^admin/pin(/?)+$ admin/index.php?menu=pin [L]
+RewriteRule ^admin/torg(/?)+$ admin/index.php?menu=torg [L]
+RewriteRule ^admin/exit(/?)+$ admin/index.php?menu=exit [L]
+
+#Модераторские ссылки
+
+RewriteRule ^admin/ticket/id/([0-9]+)(/?)+$ admin/index.php?menu=ticket&id=$1 [L]
+RewriteRule ^admin/ticket(/?)+$ admin/index.php?menu=ticket [L]
+RewriteRule ^admin/stats(/?)+$ admin/index.php?menu=stats [L]
+RewriteRule ^admin/story_buy(/?)+$ admin/index.php?menu=story_buy [L]
+RewriteRule ^admin/story_swap(/?)+$ admin/index.php?menu=story_swap [L]
+RewriteRule ^admin/story_sell(/?)+$ admin/index.php?menu=story_sell [L]
+RewriteRule ^admin/news(/?)+$ admin/index.php?menu=news [L]
+RewriteRule ^admin/payments(/?)+$ admin/index.php?menu=payments [L]
+RewriteRule ^admin/exit(/?)+$ admin/index.php?menu=exit [L]

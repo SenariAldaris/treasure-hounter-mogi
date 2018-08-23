@@ -1,0 +1,42 @@
+div.tooltip{
+    background-color:#FBF7AA; /*background color of tooltip*/
+    border:1px solid #a2844a;
+    color: #B17C30;
+    position:absolute;
+    top:0;
+    z-index:100;
+    visibility:hidden;
+    line-height:1.3em;
+    padding:8px;
+    width:200px; /*default width of tooltip*/
+    border-radius:8px; /*CSS3 border radius*/
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    box-shadow:0 0 10px #888888; /*CSS3 shadow*/
+    -moz-box-shadow:0 0 10px #888888;
+    -webkit-box-shadow:0 0 10px #888888;
+}
+
+div.tooltip div.tooltip-arrow-border{ /*shared CSS for arrow border DIV*/
+    border-color: transparent transparent #a2844a transparent; /*border color should be same as div.tooltip border color*/
+    border-style: solid;
+    border-width: 10px;
+    height:0;
+    width:0;
+    position:absolute;
+    top:-20px;
+    left:20px;
+    z-index:101;
+}
+
+div.tooltip div.tooltip-arrow{  /*shared CSS for arrow DIV (upwards pointing)*/
+    border-color: transparent transparent #FBF7AA transparent; /*border color should be same as div.tooltip background color*/
+    border-style: solid;
+    border-width: 10px;
+    height:0;
+    width:0;
+    position:absolute;
+    top:-19px;
+    left:20px;
+    z-index:101;
+}

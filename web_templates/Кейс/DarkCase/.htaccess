@@ -1,0 +1,11 @@
+RewriteBase /
+#Если адрес сайта 127.0.0.18 (аналог sete.ru)
+RewriteCond %{SERVER_ADDR} gamesbuys.ru
+#то редирект на главный 127.0.0.1 (site.ru)
+RewriteRule http://gamesbuys.ru/admin/(.*)$ http://gamesbuys.ru/%{REQUEST_FILENAME}$1 [R=301,L]
+
+#далее условия для главного сайта
+RewriteCond http://gamesbuys.ru/admin/(.*)$ http://gamesbuys.ru/%{REQUEST_FILENAME}$
+RewriteCond http://gamesbuys.ru/admin/(.*)$ http://gamesbuys.ru/%{REQUEST_FILENAME}$
+#и избавляемся от имени index.php
+RewriteRule ^index\.php$ / [R=301,L]

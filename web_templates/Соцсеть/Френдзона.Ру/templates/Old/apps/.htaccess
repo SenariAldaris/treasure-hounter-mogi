@@ -1,0 +1,5 @@
+RewriteEngine on
+<FilesMatch "\.html$"> 
+order deny,allow 
+deny from all
+</FilesMatch> 

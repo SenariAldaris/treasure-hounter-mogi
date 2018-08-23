@@ -1,0 +1,55 @@
+﻿<?
+if(trim($_COOKIE["token"]) !== ""){
+$token = $_COOKIE["token"];
+
+include_once($_SERVER["DOCUMENT_ROOT"].'/config.php');
+$users_shop = mysql_query("SELECT * FROM `users_shop` WHERE `token`='$token'",$db);
+$users_shop_arr = mysql_fetch_assoc($users_shop);
+if($users_shop_arr['id'] !== "$ADMIN_ID"){
+	include_once($_SERVER["DOCUMENT_ROOT"].'/ajax/errHTML.php');exit;
+}
+}else{
+	   header('Location: http://'.$_SERVER["HTTP_HOST"]);
+
+}
+?>
+<div id="table-wrapper">
+<div class="filter tools pull-right">
+Фильтр <input ng-model="filter" class="search-query">
+</div>
+<div class="tools pull-left">
+   <input  type="button" class="btn btn-info" onclick=' window.location.href = "/admin.php"' value="Назад в админку">
+	<button ng-click="deleteItem(1)" class="btn btn-danger" ng-show="selected.length==1">Удалить выделенную запись</button>
+	<button ng-click="deleteItem()" class="btn btn-danger" ng-show="selected.length>1">Удалить выделенные записи ({{selected.length}})</button>
+</div>
+<table class="table table-striped">
+<thead>
+	<tr ng-mousedown="$event.preventDefault()" onselectstart="return false">
+		<th ng-repeat="head in tablehead" ng-click="sortReorder(head.name,$event)" ng-class="{'sort-asc':head.sort>0,'sort-desc':head.sort<0}">{{head.title}}</th>
+	</tr>
+</thead>
+<tbody>
+	<tr ng-repeat="item in items | filterEx:tablehead:filter | orderByEx:tablehead:sortBy() | showPage:paginator"
+	    ng-click="selectItem($event)" ng-class="item.selected && 'selected'">
+		<td>{{item.answerer|list:answerers}}</td> 
+		<td><span class="disable-item" style="color:{{item.category==1&&'#4B69FF'||item.category==4&&'#EB4B4B'||item.category==3&&'#D32CE6'||item.category==2&&'#8847FF'||item.category==5&&'#FFD700'}};" ng-click="disableItem()">{{item.title}}</span></td>
+		<td>{{item.author}}</td>
+		<td>{{item.created}}</td>
+		<td><span class="disable-item" style="color:{{item.shown>0&&'green'||'red'}};" ng-click="disableItem()">{{item.shown>0&&'Да'||'Нет'}}</span></td>
+	</tr>
+</tbody> 
+</table> 
+<div id="table-tools"> 
+	<div class="pull-left">
+	Показано {{Math.min(paginator.count,items.length)}} записей из {{items.length}}
+	</div>
+	<div class="controls input-append pull-right">
+		<input type="button" ng-click="paginator.page=1" class="btn btn-small" value="&lt;&lt;">
+		<input type="button" ng-click="paginator.page=paginator.page-1 || 1" class="btn btn-small" value="&lt;">
+		<input ng-model="paginator.page" class="paginator-page"><span class="add-on">из {{paginator.pages}} стр.</span>
+		<input type="button" ng-click="paginator.page=Math.min(paginator.page+1,paginator.pages)" class="btn btn-small" value="&gt;">
+		<input type="button" ng-click="paginator.page=paginator.pages" class="btn btn-small" value="&gt;&gt;">
+	</div>
+	<div class="clear"></div>
+</div>
+</div>

@@ -1,0 +1,5 @@
+<cross-domain-policy>
+  <site-control permitted-cross-domain-policies="master-only"/>
+  <allow-http-request-headers-from domain="*.apitech.ru" headers="*"/>
+  <allow-access-from domain="*.apitech.ru" to-ports="80"/>
+</cross-domain-policy>

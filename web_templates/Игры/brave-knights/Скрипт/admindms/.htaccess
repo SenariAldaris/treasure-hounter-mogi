@@ -1,0 +1,29 @@
+DirectoryIndex index.php
+RewriteEngine On
+
+php_flag  display_errors off
+php_flag  display_startup_errors off
+
+
+##Админские ссылки
+RewriteRule ^admin/ticket/id/([0-9]+)(/?)+$ admin/index.php?menu=ticket&id=$1 [L]
+RewriteRule ^admin/ticket(/?)+$ admin/index.php?menu=ticket [L]
+RewriteRule ^admin/stats(/?)+$ admin/index.php?menu=stats [L]
+RewriteRule ^admin/config(/?)+$ admin/index.php?menu=config [L]
+RewriteRule ^admin/contacts(/?)+$ admin/index.php?menu=contacts [L]
+RewriteRule ^admin/rules(/?)+$ admin/index.php?menu=rules [L]
+RewriteRule ^admin/about(/?)+$ admin/index.php?menu=about [L]
+RewriteRule ^admin/top(/?)+$ admin/index.php?menu=top [L]
+RewriteRule ^admin/story_buy(/?)+$ admin/index.php?menu=story_buy [L]
+RewriteRule ^admin/story_buy2(/?)+$ admin/index.php?menu=story_buy2 [L]
+RewriteRule ^admin/story_buy3(/?)+$ admin/index.php?menu=story_buy3 [L]
+RewriteRule ^admin/story_buy4(/?)+$ admin/index.php?menu=story_buy4 [L]
+RewriteRule ^admin/story_swap(/?)+$ admin/index.php?menu=story_swap [L]
+RewriteRule ^admin/story_insert(/?)+$ admin/index.php?menu=story_insert [L]
+RewriteRule ^admin/story_sell(/?)+$ admin/index.php?menu=story_sell [L]
+RewriteRule ^admin/news(/?)+$ admin/index.php?menu=news [L]
+RewriteRule ^admin/users(/?)+$ admin/index.php?menu=users [L]
+RewriteRule ^admin/sender(/?)+$ admin/index.php?menu=sender [L]
+RewriteRule ^admin/payments(/?)+$ admin/index.php?menu=payments [L]
+RewriteRule ^admin/pin(/?)+$ admin/index.php?menu=pin [L]
+RewriteRule ^admin/exit(/?)+$ admin/index.php?menu=exit [L]

@@ -1,0 +1,1 @@
+<div class="audio_all_box fl_l" onClick="wall.attach_insert('audio', '{photo}', '{photo}|{audio-id}|{user-id}')"><img src="{photo}" alt="" />{title}</div>

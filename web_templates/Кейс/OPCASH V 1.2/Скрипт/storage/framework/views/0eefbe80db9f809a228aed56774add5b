@@ -1,0 +1,109 @@
+<?php $__env->startSection('content'); ?>
+<main class="content">
+   <div class="inner">
+      <div class="gifts">
+         <h1>Бонус каждый час</h1>
+         <div class="cls"></div>
+         <div class="info-1 gift-case">
+            <h3>Бесплатный кейс</h3>
+            <div class="cls"></div>
+            <div class="l">
+               <div class="line"></div>
+               <img src="/uploads/coin-2000.svg" alt="Бесплатный кейс">
+               <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>" />
+               <input type="hidden" name="join" value="1"><input type="submit" id="join" class="btn" value="Принять участие">
+            </div>
+            <div class="r">
+               <div class="contest-countdown" id="contest-countdown">
+                  <p>следующий розыгрыш</p>
+                  10:40
+               </div>
+            </div>
+            <div class="cls"></div>
+         </div>
+         <div class="info-2 gift-case">
+            <h3>Как это работает?</h3>
+            <img src="/uploads/hourly.png" align="left">Даем возможность открыть <b>24 бесплатных кейса</b> в день!<br>Каждый день, когда вы пополняете баланс на любую сумму, вам открывается возможность открыть бесплатный кейс 24 раза (один раз в час). Нажмите кнопку «Принять участие» и ждите розыгрыша. Каждый час, система случайным образом выбирает одного победителя из списка участвующих.
+         </div>
+         <div class="cls"></div>
+         <h3>Последний победитель</h3>
+         <div class="daily-winner">
+            <div class="daily-winner-in">
+               <div class="b1">
+                  <a href="/profile/<?php echo e($winner->id); ?>"><img src="<?php echo e($winner->avatar); ?>" alt="<?php echo e($winner->username); ?>"></a>
+               </div>
+               <div class="b2">
+                  <a href="/profile/<?php echo e($winner->id); ?>"><?php echo e($winner->username); ?></a><br>
+                  <?php echo e($v2->amount); ?> <span class="flaticon-ruble"></span>
+               </div>
+               <div class="b3"><img src="/uploads/coin-<?php echo e($v2->amount); ?>.svg" alt="<?php echo e($v2->amount); ?>р"></div>
+               <div class="cls"></div>
+            </div>
+            <div class="daily-winner-animation"></div>
+         </div>
+         <div class="cls"></div>
+         <div class="seperator" style="margin-top: 40px;"></div>
+         <h3>Могут выпасть следующие призы</h3>
+         <div class="daily-coins"><img src="/uploads/coin-2000.svg" alt="2000">
+            <img src="/uploads/coin-1500.svg" alt="1500">
+            <img src="/uploads/coin-1000.svg" alt="1000">
+            <img src="/uploads/coin-750.svg" alt="750">
+            <img src="/uploads/coin-500.svg" alt="500">
+            <img src="/uploads/coin-300.svg" alt="300">
+            <img src="/uploads/coin-200.svg" alt="200">
+            <img src="/uploads/coin-100.svg" alt="100">
+            <img src="/uploads/coin-50.svg" alt="50">
+            <img src="/uploads/coin-20.svg" alt="20">
+            <img src="/uploads/coin-10.svg" alt="10">
+         </div>
+         <div class="cls"></div>
+         <div class="seperator"></div>
+         <h3>Последние 25 регистраций в розыгрыше <span class="yellow">всего: <?php echo e($all); ?></span></h3>
+         <table class="table table-daily">
+            <tbody>
+               <?php foreach($players as $p): ?>
+               <tr>
+                  <td width="50" class="id">#<?php echo e($p->id); ?></td>
+                  <td width="60"><a href="/profile/<?php echo e($p->user_id); ?>"><img src="<?php echo e($p->avatar); ?>" alt="<?php echo e($p->username); ?>" class="userpic"></a></td>
+                  <td><a href="/profile/<?php echo e($p->user_id); ?>"><?php echo e($p->username); ?></a></td>
+                  <td width="160" class="text-right date"><?php echo e($p->created_at); ?></td>
+               </tr>
+               <?php endforeach; ?>
+            </tbody>
+         </table>
+      </div>
+      <!-- 2016/10/01 00:01:00 -->
+      <meta http-equiv="refresh" content="1320;/bonus">
+      <div class="seperator"></div>
+      <script type="text/javascript" src="https://4cash.ru/templates/frontend/default/js/jquery.countdown.min.js"></script>
+      <script type="text/javascript">
+
+         var tomorrow = new Date();
+         tomorrow.setDate(tomorrow.getDate()+1);
+             var cy = tomorrow.getYear()+1900;
+             var cm = tomorrow.getMonth()+1;
+             var cd = tomorrow.getDate();
+             var ch = tomorrow.getHours();cm = (cm < 10) ? '0'+cm : cm;
+             cd = (cd < 10) ? '0'+cd : cd;
+             var hoursLeft = 24-parseInt(19);
+             ch = ch+hoursLeft;
+             ch = (ch>23) ? (ch-24) : ch;
+             var currentTime = cy+'/'+cm+'/'+cd+' '+ch+':00:00';
+             $("#contest-countdown").countdown(currentTime, function(event) {
+               $(this).html(
+                 event.strftime('<p>следующий розыгрыш</p>%M:%S')
+               );
+             }).on('update.countdown', function(event) {
+               console.log(event.strftime('%M:%S'));
+               if(event.strftime('%M:%S') == '00:00'){
+                 location.reload();
+               }
+             })
+             .on('finish.countdown', function(event) {
+             });
+      </script>
+   </div>
+</main>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('case', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

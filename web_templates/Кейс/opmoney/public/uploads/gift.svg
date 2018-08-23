@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="516.7832"
+   height="528.74017"
+   id="svg40140"
+   version="1.1"
+   inkscape:version="0.47pre4 "
+   sodipodi:docname="gift.svg">
+  <defs
+     id="defs40142">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective40148" />
+    <inkscape:perspective
+       id="perspective40036"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11523"
+       id="linearGradient10804"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(8.6826169,1.2070457,-1.2070457,8.6826169,189331.79,26162.256)"
+       x1="-21740.311"
+       y1="52.349274"
+       x2="-21740.527"
+       y2="46.679565" />
+    <linearGradient
+       id="linearGradient11523"
+       inkscape:collect="always">
+      <stop
+         id="stop11525"
+         offset="0"
+         style="stop-color:#a30b0a;stop-opacity:1;" />
+      <stop
+         id="stop11527"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11531"
+       id="linearGradient10802"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(6.7180796,0.93393833,-1.1331668,8.1511854,145926.1,20157.411)"
+       x1="-21630.043"
+       y1="50.391876"
+       x2="-21633.137"
+       y2="46.326012" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient11531">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop11533" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop11535" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11439"
+       id="radialGradient10800"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-25.253194,-1.7847352,0.0886456,-1.254227,-549629.46,-38412.161)"
+       cx="-21778.418"
+       cy="43.044777"
+       fx="-21778.418"
+       fy="43.044777"
+       r="7.789629" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient11439">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop11441" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop11443" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11439"
+       id="radialGradient10798"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-25.253194,-1.7847352,0.0886456,-1.254227,-549629.46,-38412.161)"
+       cx="-21778.383"
+       cy="60.948631"
+       fx="-21778.383"
+       fy="60.948631"
+       r="7.789629" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11473"
+       id="linearGradient10796"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(7.9612909,0,0,7.9612909,173734.88,-47.182313)"
+       x1="-21772.701"
+       y1="52.159641"
+       x2="-21772.438"
+       y2="48.624107" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient11473">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop11475" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop11477" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11455"
+       id="radialGradient10794"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-43.971247,-4.7534021,0.22849874,-2.1137233,-957074.19,-103109.7)"
+       cx="-21774.381"
+       cy="43.605473"
+       fx="-21774.381"
+       fy="43.605473"
+       r="6.6814504" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient11455">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop11457" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop11459" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11415"
+       id="linearGradient10792"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(7.9612909,0,0,7.9612909,173734.88,-47.182313)"
+       x1="-21769.52"
+       y1="45.707294"
+       x2="-21776.857"
+       y2="42.646847" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient11415">
+      <stop
+         style="stop-color:#7d0202;stop-opacity:1;"
+         offset="0"
+         id="stop11417" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1"
+         offset="1"
+         id="stop11419" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11485"
+       id="radialGradient10790"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-32.286022,-4.6363647,0.4347342,-3.0273364,-702494.79,-100535.44)"
+       cx="-21770.668"
+       cy="40.736576"
+       fx="-21770.668"
+       fy="40.736576"
+       r="5.9530001" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient11485">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop11487" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop11489" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11427"
+       id="linearGradient10788"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(7.9612909,0,0,7.9612909,173733.88,-47.182313)"
+       x1="-21767.133"
+       y1="44.337273"
+       x2="-21771.154"
+       y2="30.858051" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient11427">
+      <stop
+         style="stop-color:#9a0000;stop-opacity:1;"
+         offset="0"
+         id="stop11429" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1"
+         offset="1"
+         id="stop11431" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11497"
+       id="linearGradient10786"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(7.9612909,0,0,7.9612909,173733.88,-47.182313)"
+       x1="-21769.432"
+       y1="50.170906"
+       x2="-21766.867"
+       y2="44.469856" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient11497">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop11499" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop11501" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11405"
+       id="linearGradient10784"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(7.9612909,0,0,7.9612909,173733.88,-47.182313)"
+       x1="-21770.404"
+       y1="53.043526"
+       x2="-21775.396"
+       y2="46.149235" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient11405">
+      <stop
+         style="stop-color:#950101;stop-opacity:1;"
+         offset="0"
+         id="stop11407" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1"
+         offset="1"
+         id="stop11409" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11575"
+       id="linearGradient10782"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(9.1940653,0,0,9.1940653,200592.86,-114.93605)"
+       x1="-21770.5"
+       y1="49.424686"
+       x2="-21785.062"
+       y2="46.362186" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient11575">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop11577" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop11579" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11555"
+       id="radialGradient10780"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-5.2390262,5.9048475,-1.2678937,-1.1249274,-113869.11,129052.15)"
+       cx="-21792.652"
+       cy="45.911179"
+       fx="-21792.652"
+       fy="45.911179"
+       r="5.8671741" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient11555">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop11557" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop11559" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11545"
+       id="linearGradient10777"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(9.1940653,0,0,9.1940653,200592.86,-114.93605)"
+       x1="-21788.125"
+       y1="45.237186"
+       x2="-21789.562"
+       y2="51.487186" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient11545">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop11547" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop11549" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11379"
+       id="linearGradient10773"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(6.7826861,0,0,6.7826861,147254.52,8.1639051)"
+       x1="-21638.787"
+       y1="67.977219"
+       x2="-21640.25"
+       y2="57.362186" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient11379">
+      <stop
+         style="stop-color:#9c0001;stop-opacity:1"
+         offset="0"
+         id="stop11381" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="1"
+         id="stop11383" />
+    </linearGradient>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter11353">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.23508"
+         id="feGaussianBlur11355" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter11365">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.3555959"
+         id="feGaussianBlur11367" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="237.67731"
+     inkscape:cy="240.6754"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="939"
+     inkscape:window-height="608"
+     inkscape:window-x="176"
+     inkscape:window-y="176"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata40145">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-137.32269,-244.29743)">
+    <path
+       style="fill:#c1bdbc;fill-opacity:1;stroke:none"
+       d="m 621.41774,676.98963 23.99154,-270.97859 -363.31246,73.13995 10.79339,293.46017 328.52753,-95.62153 z"
+       id="path10604"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#94908f;fill-opacity:1;stroke:none"
+       d="M 293.42848,773.03758 163.9217,601.77489 145.27093,365.44073 282.41139,477.35512 293.42848,773.03758 z"
+       id="path10606"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="matrix(6.7826861,0,0,6.7826861,148750.9,1705.9779)"
+       style="fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter11365)"
+       d="m -21836.173,-187.53216 0.231,-6.5846 -53.706,10.25693 0.157,7.15625 53.318,-10.82858 z"
+       id="path10608"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="matrix(6.7826861,0,0,6.7826861,148750.9,1705.9779)"
+       style="fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter11353)"
+       d="m -21889.46,-176.67233 -0.219,-7.25 -19.721,-17.26256 0,5.60225 19.942,18.91031 0,0 z"
+       id="path10610"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       id="path10612"
+       d="m 649.72943,432.2074 3.83082,-44.51088 -373.26699,71.21755 1.05557,48.53883 368.3806,-75.2455 z"
+       style="fill:#c2bebd;fill-opacity:1;stroke:none"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       id="path10614"
+       d="m 281.55854,507.66471 -1.475,-49.17427 -142.76085,-125.47953 3.29254,40.69614 140.94331,133.95766 z"
+       style="fill:#9a9695;fill-opacity:1;stroke:none"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#dddcda;fill-opacity:1;stroke:none"
+       d="M 653.33655,387.69652 280.30025,459.36706 137.58833,333.01091 453.83347,287.01524 653.33655,387.69652 z"
+       id="path10616"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:2.71307445;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 652.74935,387.98803 279.92276,458.54287"
+       id="path10618"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:url(#linearGradient10773);fill-opacity:1;stroke:none"
+       d="m 499.12519,713.18526 -65.42448,18.95975 8.54244,-304.55137 -98.79734,-67.66425 60.83869,-17.16877 110.4296,71.00643 -15.58891,299.41821 z"
+       id="path10620"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       id="path10622"
+       d="M 442.24315,427.59364 276.00106,313.46745 342.53704,304.09243 514.7141,413.76705 442.24315,427.59364 z"
+       style="fill:#b90006;fill-opacity:1;stroke:none"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#630005;fill-opacity:1;stroke:none"
+       d="m 234.61006,695.24822 -25.85801,-33.80766 -23.2086,-285.08479 339.60753,-54.23473 38.30817,19.33025 -350.31704,58.75061 21.46795,295.04632 z"
+       id="path10624"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       id="path10636"
+       d="m 195.72168,379.74758 339.60054,-54.23543 38.30817,19.33025 -350.30306,58.75062 -27.60565,-23.84544 z"
+       style="fill:#a90007;fill-opacity:1;stroke:none"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#a00c0d;fill-opacity:1;stroke:none"
+       d="m 288.91958,329.70998 c -15.25336,1.49947 -29.10861,0.0699 -36.77025,-14.36627 l -27.59167,2.29849 c -6.37537,2.33135 -21.15338,30.6025 3.74693,39.07504 l 93.9459,10.63051 -0.82488,-28.73112 -32.47806,-8.90665 0,0 z"
+       id="path10638"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="cccccccc"
+       id="path10640"
+       d="m 288.91958,329.70998 c -15.25336,1.49947 -29.10861,0.0699 -36.77025,-14.36627 l -27.59167,2.29849 c -6.37537,2.33135 -21.15338,30.6025 3.74693,39.07504 l 93.9459,10.63051 -0.82488,-28.73112 -32.47806,-8.90665 0,0 z"
+       style="fill:url(#linearGradient10777);fill-opacity:1;stroke:none"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:0.27391304;fill:url(#radialGradient10780);fill-opacity:1;stroke:none"
+       d="m 288.91958,329.70998 c -15.25336,1.49947 -29.10861,0.0699 -36.77025,-14.36627 l -27.59167,2.29849 c -6.37537,2.33135 -21.15338,30.6025 3.74693,39.07504 l 93.9459,10.63051 -0.82488,-28.73112 -32.47806,-8.90665 0,0 z"
+       id="path10642"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#a70007;fill-opacity:1;stroke:none"
+       d="m 325.8646,357.10591 c -30.55566,-21.56303 -67.89914,-45.51053 -102.79592,-38.8038 l 39.39869,-28.44242 c 33.17712,-6.04542 69.26229,17.60358 105.03989,38.19493 l -41.64266,29.05129 z"
+       id="path10644"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       id="path10646"
+       d="m 325.8646,357.10591 c -30.55566,-21.56303 -67.89914,-45.51053 -102.79592,-38.8038 l 39.39869,-28.44242 c 33.17712,-6.04542 69.26229,17.60358 105.03989,38.19493 l -41.64266,29.05129 z"
+       style="opacity:0.66086958;fill:url(#linearGradient10782);fill-opacity:1;stroke:none"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:url(#linearGradient10784);fill-opacity:1;stroke:none"
+       d="m 465.34689,326.39786 -84.34788,87.82288 c -16.0433,4.7263 -7.9832,-97.60125 44.54373,-52.13547 47.43782,-128.2359 50.42278,-67.44335 39.80415,-35.68741 z"
+       id="path10648"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:0.98260869;fill:#a40000;fill-opacity:1;stroke:none"
+       d="m 431.1142,349.92173 c -1.09052,0.33555 24.89333,-67.02602 35.53992,-65.97814 l -31.60424,-2.48863 -3.93568,68.46677 z"
+       id="path10650"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="cccc"
+       id="path10653"
+       d="m 431.14916,349.93292 c 6.0608,-17.26035 24.85837,-67.03721 35.50496,-65.98933 l -33.1841,-3.19188 -2.32086,69.18121 z"
+       style="opacity:0.98260869;fill:url(#linearGradient10786);fill-opacity:1;stroke:none"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:url(#linearGradient10788);fill-opacity:1;stroke:none"
+       d="m 427.28339,364.55643 c -4.00558,-74.24166 18.3991,-178.03583 16.04329,-61.7929 -0.8109,10.24185 -8.91993,37.15264 -16.04329,61.7929 z"
+       id="path10655"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#b40101;fill-opacity:1;stroke:none"
+       d="m 426.78007,331.37372 c 6.16566,-75.92427 9.78676,-75.20565 13.68748,-80.11021 l -87.07419,-6.96608 c -6.35441,9.31141 -6.3614,19.41903 -7.71057,29.35679 l 81.09728,57.7195 z"
+       id="path10657"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       id="path10668"
+       d="m 426.78007,331.37372 c 6.16566,-75.92427 9.78676,-75.20565 13.68748,-80.11021 l -87.07419,-6.96608 c -6.35441,9.31141 -6.3614,19.41903 -7.71057,29.35679 l 81.09728,57.7195 z"
+       style="opacity:0.76086958;fill:url(#radialGradient10790);fill-opacity:1;stroke:none"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:url(#linearGradient10792);fill-opacity:1;stroke:none"
+       d="m 427.40223,365.43654 c 0.48934,-46.35568 0,-88.65755 -9.67491,-94.82181 -10.6466,14.22855 -9.77977,47.27634 -7.80844,69.36925 1.16742,13.16039 5.99789,13.62596 17.48335,25.45256 z"
+       id="path10670"
+       sodipodi:nodetypes="ccsc"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#a40e0f;fill-opacity:1;stroke:none"
+       d="M 426.17189,364.61795 338.91594,352.94584 C 307.83599,330.4286 322.52312,269.39558 328.70276,262.52178 l 89.0665,8.11392 c -6.1377,12.83324 -18.58785,60.33187 8.40263,93.98225 z"
+       id="path10674"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       id="path10676"
+       d="M 426.17189,364.61795 338.91594,352.94584 C 307.83599,330.4286 322.52312,269.39558 328.70276,262.52178 l 89.0665,8.11392 c -6.1377,12.83324 -18.58785,60.33187 8.40263,93.98225 z"
+       style="opacity:0.6043478;fill:url(#radialGradient10794);fill-opacity:1;stroke:none"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:0.6043478;fill:url(#linearGradient10796);fill-opacity:1;stroke:none"
+       d="M 426.17189,364.61795 338.91594,352.94584 C 307.83599,330.4286 322.52312,269.39558 328.70276,262.52178 l 89.0665,8.11392 c -6.1377,12.83324 -18.58785,60.33187 8.40263,93.98225 z"
+       id="path10678"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#b60000;fill-opacity:1;stroke:none"
+       d="m 380.13218,413.46226 -92.87634,-9.49875 c -7.9133,-14.24952 -9.84269,-54.86107 30.25506,-59.81387 l 89.19233,10.55572 c -34.45638,-7.50505 -37.92369,54.31022 -26.57105,58.7569 z"
+       id="path10680"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       id="path10683"
+       d="m 380.13218,413.46226 -92.87634,-9.49875 c -7.9133,-14.24952 -9.84269,-54.86107 30.25506,-59.81387 l 89.19233,10.55572 c -34.45638,-7.50505 -37.92369,54.31022 -26.57105,58.7569 z"
+       style="opacity:0.6043478;fill:url(#radialGradient10798);fill-opacity:1;stroke:none"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:0.6043478;fill:url(#radialGradient10800);fill-opacity:1;stroke:none"
+       d="m 380.13218,413.46226 -92.87634,-9.49875 c -7.9133,-14.24952 -9.84269,-54.86107 30.25506,-59.81387 l 89.19233,10.55572 c -34.45638,-7.50505 -37.92369,54.31022 -26.57105,58.7569 z"
+       id="path10685"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#a80007;fill-opacity:1;stroke:none"
+       d="m 418.9996,372.83533 30.42983,-30.41235 c 25.13799,-13.17927 129.00346,-57.19732 115.42783,19.36799 L 536.26594,395.78318 418.9996,372.83533 z"
+       id="path10687"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       id="path10689"
+       d="m 418.9996,372.83533 30.42983,-30.41235 c 25.13799,-13.17927 129.00346,-57.19732 115.42783,19.36799 L 536.26594,395.78318 418.9996,372.83533 z"
+       style="opacity:0.33478262;fill:url(#linearGradient10802);fill-opacity:1;stroke:none"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:url(#linearGradient10804);fill-opacity:1;stroke:none"
+       d="m 414.63051,376.13487 c 77.29442,-38.28301 170.17077,-22.53542 121.31387,19.2121 l -121.31387,-19.2121 z"
+       id="path10691"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="E:\PEKNA_STRANKA\PROJEKTY\Svadobne_salony\Sablona\vzhlad-katalogu\ikony\dary-blahozelania-big.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>

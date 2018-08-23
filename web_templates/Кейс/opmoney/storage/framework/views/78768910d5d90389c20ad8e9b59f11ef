@@ -1,0 +1,102 @@
+
+
+<?php $__env->startSection('content'); ?>
+    <div class="filters">
+        <div class="inner">
+            <div class="cls"></div>
+        </div>
+    </div>
+    <main class="content">
+      <div class="inner"><div class="cases">
+      <div class="cls">
+      </div>
+      <div class="cases">
+        <h1>Bonus призы</h1>
+      <div class="cls"></div>
+      <div class="cases-default">
+        <?php foreach($cases2 as $c): ?>
+            <div class="case-grid" style="float: right;position: relative;left: -37%;text-align: left;">
+                <div class="case">
+                    <a href="/cases/<?php echo e($c->id); ?>" class="mobile-url">Подробнее</a>
+                    <div class="hover eas">
+                        <div class="light"><a href="/cases/<?php echo e($c->id); ?>"
+                                              class="btn orange rounded eas">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <b>стоимость</b><?php echo e($c->price); ?> <span class="flaticon-ruble"></span></div>
+                    <div class="img">
+                        <div class="prize"><img src="<?php echo e($c->img); ?>" alt="Призовая обложка"></div>
+                    </div>
+                    <div class="payed">
+                        <div class="center">выдано <?php echo e($c->won); ?><span class="flaticon-ruble ruble-small"></span>
+                        </div>
+                    </div>
+                    <div class="case-footer"><a href="/cases/1.html">Содержит от <b><?php echo e($c->price_min); ?><span
+                                        class="flaticon-ruble ruble-small"></span></b> до <b><?php echo e($c->price_max); ?>
+
+                                <span class="flaticon-ruble ruble-small"></span></b></a></div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+      </div>
+<div class="cls"></div>
+      <h3 class="MarginTop-30">Денежные призы</h3>
+      <div class="cls"></div>
+      <div class="cases-digital">
+        <?php foreach($cases as $c): ?>
+        <?php if($c->price > 0): ?>
+        <div class="case-grid">
+            <div class="case">
+                <a href="/cases/<?php echo e($c->id); ?>" class="mobile-url">Подробнее</a>
+                <div class="hover eas">
+                    <div class="light"><a href="/cases/<?php echo e($c->id); ?>"
+                                          class="btn orange rounded eas">Подробнее</a>
+                    </div>
+                </div>
+                <div class="price">
+                    <b>стоимость</b><?php echo e($c->price); ?> <span class="flaticon-ruble"></span></div>
+                <div class="img">
+                    <div class="prize"><img src="<?php echo e($c->img); ?>" alt="Призовая обложка"></div>
+                </div>
+                <div class="payed">
+                    <div class="center">выдано <?php echo e($c->won); ?><span class="flaticon-ruble ruble-small"></span>
+                    </div>
+                </div>
+                <div class="case-footer"><a href="/cases/1.html">Содержит от <b><?php echo e($c->price_min); ?><span
+                                    class="flaticon-ruble ruble-small"></span></b> до <b><?php echo e($c->price_max); ?>
+
+                            <span class="flaticon-ruble ruble-small"></span></b></a></div>
+            </div>
+        </div>
+
+        <?php endif; ?>
+
+        <?php endforeach; ?>
+      </div>
+      <div class="cls"></div></div><div class="cls"></div>
+      </div></div>
+        </div>
+    </main>
+    <div class="top-users">
+        <div class="inner">
+            <h3>Самые везучие</h3>
+            <div class="cls"></div>
+            <div class="top-10">
+                <?php foreach(App\User::top() as $i): ?>
+                    <?php if($i->place >= 1): ?>
+                    <span class="user">
+<a href="/profile/<?php echo e($i->id); ?>" class="eas"><img src="<?php echo e($i->avatar); ?>"
+                                             alt="<?php echo e($i->username); ?>"></a>
+<span class="s-cases"><span class="flaticon-case"></span> <?php echo e($i->open_box); ?></span>
+<span class="s-money"><span class="flaticon-money"></span> <?php echo e($i->win); ?><span class="flaticon-ruble small-icon"></span></span>
+</span>
+                    <?php endif; ?>
+                    <?php endforeach; ?>
+            </div>
+            <div class="cls"></div>
+        </div>
+    </div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

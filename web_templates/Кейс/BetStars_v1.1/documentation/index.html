@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bet Stars | Documentation</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="assets/css/AdminLTE.css">
+    <link rel="stylesheet" href="assets/css/skins/_all-skins.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="skin-blue fixed" data-spy="scroll" data-target="#scrollspy">
+    <div class="wrapper">
+
+      <header class="main-header">
+        <!-- Logo -->
+        <!-- Logo -->
+        <a href="/admin" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini"><b>B</b>S</span>
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><b>Bet Stars</b>Docs</span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+        </nav>
+      </header>
+      <aside class="main-sidebar">
+        <div class="sidebar" id="scrollspy">
+
+          <ul class="nav sidebar-menu">
+            <li class="header">TABLE OF CONTENTS</li>
+			<li class="active"><a href="#welcome"> Welcome</a></li>
+            <li><a href="#installation"> Installation</a></li>
+            <li><a href="#configuration"> Configuration</a></li>
+            <li><a href="#content"> Populating Content</a></li>
+            <li><a href="#odds"> Odds Insertion</a></li>
+			<li><a href="#tips"> Tips Management</a></li>
+            <li><a href="#access_control"> Access Control</a></li>           
+            <li><a href="#translations"> Translations</a></li>
+            <li><a href="#credits"> Sources and Credits </a></li>
+			<li class="header">Author</li>
+			<li class="author"><small>By <a href="http://codecanyon.net/user/codauris"> Codeauris </a></small><br>
+			  14.11.2015
+			</li>
+          </ul>
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+          <h1>
+            Bet Stars Documentation
+			<span class="pull-right">
+				<small>Version 1.1</small>
+			</span>
+          </h1>
+        </div>
+
+<!-- Main content -->
+<div class="content body">
+
+<!-- ============================================================= -->
+<section id="welcome">
+  <h2 class="page-header"><a href="#welcome">Welcome</a></h2>
+  <p class="lead">
+    Thank you for purchasing this script. If you have any questions that are beyond the scope of this help file, please feel free to email me via my user page contact form <a href="http://codecanyon.net/user/codauris">here</a>. Thank you!</p>
+
+</section><!-- /#welcome -->	
+	
+<!-- ============================================================= -->
+	
+<section id="installation">
+  <h2 class="page-header" style="padding-top:0"><a href="#installation">Installation</a></h2>
+    <p class="lead">
+      <H3>Server Requirements</H3>
+     </p>
+        <ul>
+          <li>PHP 5.3+</li>
+          <li>PHP Mysqli Extension</li>
+          <li>PHP Curl Extension Enabled</li>
+        </ul>
+
+    
+    <H3>Folder and Files write Permissions</H3>
+    <p>Make sure that this folders and files are writable.<br>
+    </p>
+	<p><span class="text-blue">Folders</span></p>
+	<ul>
+	    <li><code>application/cache</code></li>
+		<li><code>application/logs</code></li>
+		<li><code>application/config</code></li>
+		<li><code>application/archives</code></li>
+		<li><code>application/db/backups</code></li>
+		<li><code>assets/cache</code></li>
+	</ul>
+	<p><span class="text-blue">Files</span></p>
+	<ul>
+	    <li><code>application/config/application.php</code></li>
+		<li><code>application/config/database.php</code></li>
+	</ul>
+	
+	<H3>Installing the Script</H3>
+	<p><span class="text-blue">Auto Installer</span></p>
+
+		<p> Extract and upload the files from the Zip file to your server.</p>
+		<p> Point your browser to the directory where you uploaded the files and follow the install steps.</p>
+		<img class="img-responsive" src="assets/img/install.jpg">
+	
+	<p><span class="text-blue">Manual Install</span></p>
+	<ul>
+		<li><h4>Step 1 - Unzip and Upload</h4>
+		<p> Extract and copy the files from the Zip file you have downloaded from CodeCanyon to your server.</p></li>
+
+		<li><h4>Step 2 - Create a Database</h4>
+		<p> Create a database using PHPMyAdmin from your hosting panel to your server.</p>
+		<p> Open PHPMyAdmin and go to databases.</p></li>
+	</ul>
+	<img src="assets/img/database1.jpg">
+	<ul>	
+		<li><p> Enter the name of the database (ex. bettstars) and click create</p></li>
+	</ul>
+	<img class="img-responsive" src="assets/img/database2.jpg">
+	<ul>	
+	
+		<li><h4>Step 3 - Import the SQL File</h4>
+		<p>Go to the databese you have just created and click import.</p>
+		<p>Click on Choose File ,locate the <code>bettstars.sql</code> file <br>(It should be in the sql folder of your download package) and click Go.</p></li>
+	</ul>
+	<img src="assets/img/database3.jpg">
+	
+	<ul>
+		<li>
+			<h4>Step 4 - Database Config</h4>
+			<p>Open the <code>application/config/database.php</code> and edit the settings</p>
+		</li>
+    </ul>	
+	
+	
+	<ul>
+	<li><h4>Step 5 - Rewrite base ( If you have installed the script in the root directory on your server you can skip this step ).</h4>
+	<p>If you have installed the script in subdirectory on your server.<br>Open the<code>.htaccess</code> file located in the upload folder, and around line 158 change this line RewriteBase / <br>
+	To RewriteBase /your_instal_folder/ ( Don't forget the ending slash ).</p>
+</li>
+	<li><h4>You can now login to the site using following accounts.</h4>	</li>
+    
+	<h4><span class="text-blue">User account</span></h4>
+      <li>username: demo1</li>
+
+      <li>password: demo1</li>
+	<h4><span class="text-blue">Admin account</span></h4>
+      <li>username: admin</li>
+
+      <li>password: password</li>
+    </ul>
+
+</section><!-- /#installation -->
+
+<!-- ============================================================= -->
+
+<section id="configuration">
+  <h2 class="page-header"><a href="#configuration">Configuration</a></h2>
+  <p class="lead">
+    Installation is now complete, and you can configure your Site. </p>
+
+    <p>Login with the admin account and from the dropdown menu on the right choose control panel.</p>
+
+<img class="img-responsive" src="assets/img/cpanel.jpg">
+
+
+<p>To configure Site Settings go to Admin > System Setting > Settings.</p>
+<br>
+
+	<img src="assets/img/cpanel_settings.jpg">
+    <h4>In Site Settings  you can set up.</h4>
+    <ul>
+      <li>Site name - Your site name
+      </li>
+      <li>Site Email - For System Generated Emails.
+      </li>
+	  <li>Site Status - Online or Offline(Maintenance Mode).
+      </li>
+      <li>Site Language - The defaul language for the site
+      </li>
+      <li>Activation type,login type password options and more.
+      </li>
+
+    </ul>
+
+</section><!-- /#configuration -->
+
+<!-- ============================================================= -->
+
+<section id="content">
+  <h2 class="page-header"><a href="#content">Content</a></h2>
+  <p class="lead">
+    Installation comes with demo content to help you speed up your populating proccess.<br>
+    Categories like, Sports,Leagues, Events and odds are auto updated.
+  </p>
+  
+	<h4 class="text-blue">Cronjob.</h4>
+    <p class="lead">For auto updating of the database you need to create a cronjob in your hosting cpanel.</p>
+	<p class="lead">Go to your Cpanel cronjobs and setup a cronjob with the following command</br>
+	(Assuming you installed the script in your root folder)</p>
+	<p><code>/home/yourusername/public_html/index.php cron index</code></p>
+	
+	<img class="img-responsive" src="assets/img/cron.jpg">
+	
+	<p class="lead">Get help from your hosting provider if any trouble</p>
+	<h5 class="text-blue">Depending on your hosting it could be any of the following.</h5>
+	<p><code>php5-cli path/to/folder/index.php cron index</code></p>
+	<p><code>20 * * * * php path/to/folder/index.php cron index</code></p>
+	<p><code>php /home/username/public_html/index.php cron index</code></p>
+	<p><code>php-cli /home/username/public_html/index.php cron index</code></p>
+   
+   
+   
+   </br>  
+   <h4 class="text-blue">Testing on local server WAMP/XAMMP on windows</h4>
+    <p class="lead">A cron.bat file is included to help you test live updates on local server on windows machine.</p>
+	<p class="lead">Set up shedulled task to simulate cron job.</p>	
+	<p class="lead">Create a sheduled task to run the cron.bat file located in the cron folder of the downloaded package.</p>
+	
+    </br>
+   </br>
+	<h3>The Content</h3>
+    <p class="lead">Leagues,teams and events are auto updated, installation comes with 330+ leagues and 3000+ teams added<br>
+	If a new league or team is added to database you will need to assign country for the league,or logo for the team.
+	</p>
+    <h3>Teams View Panel</h3>
+    <p class="lead">Choose Teams from the navigation on the left in admin panel.</p>
+<img class="img-responsive" src="assets/img/teams.jpg">
+<p class="lead">Click on team name to edit team.</p>
+    <ul>
+        <li> You will be presented with the team edit form.</li>
+
+        <li> Choose team logo.</li>
+
+    </ul>
+</section><!-- /#content -->
+
+<!-- ============================================================= -->
+
+<section id="tips">
+  <h2 class="page-header"><a href="#tips">Tips Management</a></h2>
+  <p class="lead">
+    Tips Management Page allows you to manage the tips posted to the site.<br>
+	The default status of the tip is DRAFT.You can choose to activate the tip,<br>
+	and the tip will be displayed on the site with a Pending status.<br><br>
+	<img src="assets/img/tips.jpg">
+  <h3>Editing a Tip</h3>
+  You can review and edit the tips by clicking the edit button (pencil icon) on the right.<br>
+  You will be displayed with the edit tips page.<br><br>
+  <img class="img-responsive" src="assets/img/tips_edit.jpg">
+	If event for the tip is over you can assign result of the event and choose a status of Won / Lost for the tip.<br>
+	The winnings will be auto-calculated based on the status assigned.
+  <h3>Winnings Calculation Formula</h3>
+  <ul>
+    <li> Status Won – winnings = (Stake*Odds)-Stake</li>
+    <li> Status Lost – winnings = (-Stake) </li>
+	<li> Status Void – winnings = 0 </li>
+
+  </ul>	
+	<img class="img-responsive" src="assets/img/tips_edit2.jpg">
+
+  </p>
+</section><!-- /#tips -->
+
+<!-- ============================================================= -->
+
+<section id="access_control">
+    <h2 class="page-header"><a href="#access_control">Access Control</a></h2>
+    <p class="lead">
+      Bett Stars has a powerfull Role/Permission System. <br>
+      Allowing you to control access in every page and section of the site.
+
+
+    <h3>Creating Roles</h3>
+    Go to New Role page and insert Name, Description and type of the role. <br>
+	<br>
+	<img class="img-responsive" src="assets/img/roles.jpg">
+	After the role is created you can assign permissions to the role. <br><br>
+	<img src="assets/img/roles2.jpg">
+	Or you can use the permissions matrix to quickly add or remove permission for specific role. <br><br>
+	<img class="img-responsive" src="assets/img/matrix.jpg">
+    </p>
+  </section><!-- /#access_control -->
+
+<!-- ============================================================= -->
+
+<section id="translations">
+  <h2 class="page-header"><a href="#translations">Language Translations</a></h2>
+  <p class="lead">
+    To translate a language go to System Settings > Translations.Choose the language to be translated <br>
+	or choose other to add a new language, and click select.<br>
+	After you click select, choose from the list what language file you want to translate to the selected language<br><br>
+<img src="assets/img/translate.jpg">
+
+  <h3>Start Translating</h3>
+   <p class="lead">Fill in the field on the right with the values of the translating language and click save. </p>
+
+	<img class="img-responsive" src="assets/img/translate2.jpg">
+  </p>
+</section><!-- /#translations -->
+
+
+<!-- ============================================================= -->
+<section id="credits">
+  <h2 class="page-header"><a href="#credits">Sources and Credits </a></h2>
+  <p class="lead">
+    <h3><span class="text-blue">Note! </span> Images are not included in the download package</h3>
+
+    <h3>Credits to:</h3>
+    <br>
+      <ul>
+		<li> Auth,Template,Assets and other Helpers & Libraries By <br><a href="http://cibonfire.com">CI Bonfire</a> 
+		Jump Start framework for Codeigniter Applications </li>
+        <li> Admin Panel & Documentation based on AdminLTE Template By <a href="http://almsaeedstudio.com">Almsaeedstudio</a> </li>
+		<li>Country flags</a> By <a href="http://www.senojflags.com">Senojflags</a> </li>
+		<li>Sport Icons By <a href="http://findicons.com">Findicons</a></li>
+      </ul>
+  
+
+Once again, thank you so much for purchasing this script. As I said at the beginning, I'd be glad to help you if you have any questions relating to this script.
+  </p>
+</section><!-- /#introduction -->
+
+  </div><!-- /.content -->
+ </div><!-- /.content-wrapper -->
+
+
+
+    </div><!-- ./wrapper -->
+  <!-- jQuery 2.1.4 -->
+    <script src="assets/js/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="assets/js/app.min.js"></script>
+    <!-- SlimScroll 1.3.0 -->
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <script src="assets/js/docs.js"></script>
+  </body>
+</html>

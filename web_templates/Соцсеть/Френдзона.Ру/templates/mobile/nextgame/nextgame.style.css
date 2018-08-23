@@ -1,0 +1,191 @@
+/* Style for NextGame.RU
+	date: 22.11.2011
+	author: AlexBen
+*/
+
+/* all games */
+.wgame {
+	width:95%;
+	margin:0 auto;
+	margin-bottom:10px;
+}
+.wgame img {
+	border:none;
+	float:left;
+ }
+.wgame:before {content: "все игры"; position:relative; top:-40px; color:#137ad0;}
+.topgame:before {content: "топ 5 игр"; position:absolute; top:-2px; left:85%;}
+.topgame:before,.wgame:before {
+	width: 104px;
+	height: 29px;
+	background-repeat: no-repeat;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAAAdBAMAAAC03TTgAAAAMFBMVEX////7/f34+/z4+fnw9vfs9PXr9PXv8PDp6Ojl5OTi5ebi4OHc2trZ2NjW1NTT0dGIA88cAAAAfUlEQVR4nGP4wEAqYJNnGNU0qmlU00BqEiVHk6odw2WSNbnYMmwnWVNSNUM1qXpYArcz8BuQqMnM+AMDxwbS9DCncDcwMMwSIEUPY5hDJ5Cy3KxIvB4hNyeJySC9vcWuacSCFCfhG2CXsf8uIdqFjO77CyAs9j3/iQanQXoAfxViuBSiHUcAAAAASUVORK5CYII=);
+    display: block;
+	font-size:14px;
+	line-height:30px;
+	text-align:center;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#323232;
+
+}
+
+.wgame:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.ngame {
+	width:45%;
+	float:left;
+	padding-top: 4px;
+	margin:5px;
+	margin-bottom:10px;
+	position:relative;
+	margin-right:15px;
+	position:relative;
+	top:-20px;
+	left:10px;
+	padding:5px;
+	padding-bottom:10px;
+	border:1px solid #e8e9ea;
+	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius:10px 10px 10px 10px;
+}
+.ngame:hover {border-color:#cbdfe8;}
+.ngame h2 { padding:5px;}
+.ngame img { padding-right:10px;}
+.ngame p { height:125px;}
+
+/* top games */
+
+.topgame {
+	margin:0 auto;
+	width:85%;
+	margin-top:20px;
+ }
+
+.topgame img {
+	position:relative;
+	z-index:9;
+	opacity:0.9;
+	box-shadow:0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Firefox */
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+	box-shadow: 0 0 5px black; /* Параметры тени */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+.topgame img:hover {opacity:1;}
+.topgame a {color:#000;}
+
+.topgame span,#fix#ie {
+	margin-left:20px;
+	border:2px solid #c7c7c7; 
+	border-top:2px solid #828181;
+	border-left:2px solid #828181;
+	float:left;
+	position:relative;
+	z-index:10;
+	background-color:#c7c6c6;
+	background-repeat: repeat;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAQAAAAD+Fb1AAAAEklEQVR4nGNgYMj+D8EIgCYCAHiYBamdUuTdAAAAAElFTkSuQmCC);
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.topgame span:hover {
+	border:2px solid #00a2ff; 
+	border-top:2px solid #6dc7fa;
+	border-left:2px solid #6dc7fa;
+	box-shadow:0 0 10px blue; /* Параметры тени */
+	-moz-box-shadow: 0 0 10px blue; /* Для Firefox */
+	-webkit-box-shadow: 0 0 10px blue; /* Для Safari и Chrome */
+	box-shadow:inset 0 0 5px blue; /* Параметры тени */
+}
+
+.clear {clear:both; font-size:0;line-height:0;}
+.hbanner .dpad {overflow:hidden;} /* ? */
+.hbanner {position:relative;top:-10px;}/* ? */
+.tgame img {width:80px;}
+
+.tgame {
+	float:left;
+	width:120px;
+	height:110px;
+	overflow:hidden;
+}
+
+.tgame h3 {
+	font-family:Arial;
+	font-size:10px;
+	font-weight:normal;
+	text-align:center;
+	line-height:35px;
+}
+
+.tgame:before {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* fullgame */
+
+	.fullgame {
+	padding:10px;
+	position:relative;
+	top:-25px;
+	height:145px !important;
+	overflow:hidden; 
+}
+
+.fullgame h2 {
+	padding-left:140px;
+	padding-bottom:10px;
+	position:relative;
+	top:25px;
+}
+.fullgame img {
+	float:left;
+	padding-right:10px;
+}
+.fullgame p {
+	width:410px;
+	border-right:1px solid #eee;
+	min-height:125px;
+	position:relative;
+	padding-top:5px;
+	top:15px;
+}
+#game {
+	width:750px; 
+	margin:0 auto;
+}
+
+/* screen */
+
+.preview {
+	position:relative;
+	top:-120px;
+	height:120px;
+	overflow:hidden;
+}
+.screen {
+	float:right;
+	position:relative; 
+	right:50px;
+}
+.screen img {
+	border:1px solid #646768;
+	margin:5px;
+	padding:0;
+}

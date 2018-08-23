@@ -1,0 +1,99 @@
+
+
+<?php $__env->startSection('content'); ?>
+
+
+
+    <div class="top-bar">
+        <h3>Новый кейс</h3>
+
+    </div>
+
+
+
+    <div class="well no-padding">
+
+        <!-- Forms: Form -->
+        <form method="post" action="/admin/addCase" class="form-horizontal">
+
+            <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
+            <!-- Forms: Normal input field -->
+            <div class="control-group">
+                <label class="control-label" for="inputNormal">Минимальная цена вещей (для вида)</label>
+                <div class="controls">
+                    <input type="text" name="minPrice" value="" placeholder="..." class="input-block-level">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="inputNormal">Максимальная цена вещей (для вида)</label>
+                <div class="controls">
+                    <input type="text" name="maxPrice" value="" placeholder="..." class="input-block-level">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="inputNormal">Цена кейса</label>
+                <div class="controls">
+                    <input type="text" name="Price" value="" placeholder="..." class="input-block-level">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="inputNormal">Ссылка на изображение</label>
+                <div class="controls">
+                    <input type="text" name="img" value="" placeholder="..." class="input-block-level">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="inputNormal">Цена на 10% шанс</label>
+                <div class="controls">
+                    <input type="text" name="x10" value="" placeholder="..." class="input-block-level">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="inputNormal">Цена на 20% шанс</label>
+                <div class="controls">
+                    <input type="text" name="x20" value="" placeholder="..." class="input-block-level">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="inputNormal">Цена на 30% шанс</label>
+                <div class="controls">
+                    <input type="text" name="x30" value="" placeholder="..." class="input-block-level">
+                </div>
+            </div>
+
+
+
+
+            <!-- / Forms: Form Textarea -->
+
+
+            <!-- Forms: Form Actions -->
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Сохранить</button>
+
+            </div>
+            <!-- / Forms: Form Actions -->
+
+        </form>
+        <!-- / Forms: Form -->
+
+
+        <!-- / Add News: WYSIWYG Edior -->
+
+    </div>
+    <!-- / Add News: Content -->
+
+
+
+
+    </div>
+
+    </div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('admin.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

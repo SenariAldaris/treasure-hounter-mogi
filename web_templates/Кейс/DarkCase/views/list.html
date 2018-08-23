@@ -1,0 +1,26 @@
+<div id="table-wrapper">
+<div class="filter tools pull-right">
+Фильтр <input ng-model="filterStr" class="search-query">
+</div>
+<div class="tools pull-left">
+  <a href="#/new" class="btn btn-success">Создать новую запись</a>
+</div>
+<table class="table table-striped">
+<thead>
+  <tr>
+    <th ng-repeat="head in tablehead" >{{head.title}}</th>
+  </tr>
+</thead>
+<tbody>
+  <tr ng-repeat="item in items | filter:filterStr">
+    <td><a href="#/edit/{{item.id}}">{{item.title}}</a></td>
+    <td>{{item.category}}</td>
+    <td>{{item.answerer}}</td>
+    <td>{{item.author}}</td>
+    <td>{{item.created}}</td>
+    <td>{{item.answered}}</td>
+    <td><span class="disable-item" style="color:{{['red','green'][+item.shown]}};" ng-click="disableItem()">{{['выкл','вкл'][+item.shown]}}</span></td>
+  </tr>
+</tbody>
+</table>
+</div>

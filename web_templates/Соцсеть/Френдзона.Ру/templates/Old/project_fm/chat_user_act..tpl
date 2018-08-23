@@ -1,0 +1,1 @@
+<div id="user_{id}" class="chat_user_str fl_l"><a href="{user-id}" onClick="Page.Go(this.href); return false;" title="{user_search_pref}"><img src="{ava}" /></a></div>

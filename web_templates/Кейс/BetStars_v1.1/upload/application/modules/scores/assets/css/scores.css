@@ -1,0 +1,12 @@
+.team-score.winner {
+    display: inline;
+	font-size:16px
+    font-weight: 900;
+}
+.team-score {
+    display: inline;
+	font-size:14px
+}
+td span img {
+    display: none;
+}

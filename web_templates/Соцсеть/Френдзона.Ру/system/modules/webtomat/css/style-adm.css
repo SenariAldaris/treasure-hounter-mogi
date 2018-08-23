@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+*
+table.tbl_wt_nas input, .wrap select{border:1px solid #cccccc}
+table.tbl_wt_nas td{padding:7px 15px;font-size:12px;}
+table.tbl_wt_nas{font-size:12px;}
+table.tbl_wt_nas select{height:20px;}
+table.tbl_wt_nas select,.wrap table.tbl_wt_nas input{font-size:12px}
+table.tbl_wt_nas .wt_kn{margin-bottom:10px;padding:3px 5px;cursor:pointer;}
+.wt_adm_upd{color:#4B719E;cursor:pointer;text-decoration:none;position:relative}
+#wt_upd_help,#wt_res_help,#wt_main_help,#wt_webid_help{background-color: #FFFFFF;height:200px;left:0;padding:10px;position: absolute;top: 5px;width: 500px;box-shadow: 2px 2px 2px 3px #CCCCCC;font-family: Georgia,'Times New Roman',Times,serif;font-size: 14px;z-index:2;cursor: default;
+transition: height 0.2s}
+#wt_theme1,#wt_theme2,#wt_mainpage1,#wt_mainpage2,#wt_gambrd1,#wt_gambrd2{-webkit-transition: 1s;-moz-transition: 1s;}
+#wt_theme1,#wt_theme2,#wt_mainpage1,#wt_gambrd1,#wt_gambrd2{overflow:hidden;}
+#wt_theme1,#wt_theme2,#wt_mainpage1,#wt_mainpage2{opacity:0;height:0}
+div.cwt_theme p {margin: 0;font-size: 13px;color: #8C929D;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;text-align: left;font-weight: bold;}
+div.cwt_theme {float:left;margin:5px;padding-top: 5px;padding-left: 5px;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 1.5);height:21px;width:120px;}
+div.cwt_theme input {margin: 0px}
+.wt_offsel {
+    -moz-user-select:none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    user-select:none
+}

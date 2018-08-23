@@ -1,0 +1,29 @@
+
+
+<?php $__env->startSection('content'); ?>
+    <main class="content">
+        <div class="inner"><div class="account"><div class="userbox">
+                    <div class="l">
+                        <img src="<?php echo e($user->avatar); ?>" alt="<?php echo e($user->username); ?>">
+                        <h1><?php echo e($user->username); ?> <a href="https://vk.com/<?php echo e($user->login); ?>" target="_blank"><span class="flaticon-soc-vk"></span></a></h1>
+                        <div class="u-cases"><span class="flaticon-case"></span> Кейсы: <span class="n"><?php echo e($user->open_box); ?></span></div>
+                        <div class="u-money"><span class="flaticon-money"></span> Выигрыш: <span class="n"><?php echo e($user->win); ?>р</span></div>
+                    </div>
+                    <div class="r">
+                        <a href="/" class="btn darkblue"><span class="flaticon-arrow-left"></span> назад к кейсам</a>
+                    </div>
+                    <div class="cls"></div>
+                </div><div class="seperator"></div><h3>Последние 30 призов</h3><div class="cls"></div><div class="history-cases"><div class="cls"></div>
+                    <?php foreach($items as $i): ?>
+                    <div class="history-case">
+                        <a href="/cases/<?php echo e($i->cases_id); ?>" class="eas case-url">Кейс №<?php echo e($i->cases_id); ?></a>
+                        <div class="status"><span class="flaticon-check"></span></div>
+                        <div class="coin silver">
+                            <img src="<?php echo e($i->img); ?>" alt="<?php echo e($i->price); ?> рублей">
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
+                    <div class="cls"></div></div></div><div class="seperator"></div></div>
+    </main>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,91 @@
+
+<?php $__env->startSection('content'); ?>
+<main class="content">
+   <div class="inner">
+      <div class="inner">
+         <h1 class="tickets-h1"><?php echo e($ticket->name); ?></h1>
+         <div class="tickets-info">
+            <div class="t1"><span>Стоимость:</span><br><b><?php echo e($ticket->price); ?>p.</b></div>
+            <div class="t2"><span>Джекпот:</span><br><b><?php echo e($ticket->jackpot); ?>p.</b></div>
+            <div class="t3" style="float: right;width: 50%;">Выберите свободное место, которые хотите занять. Вы можете занять неограниченное количество мест. После выдачи всех билетов один из участников выиграет джекпот. Удачи!</div>
+            <div class="cls"></div>
+         </div>
+         <script>
+            var ticket_price = <?php echo e($ticket->price); ?>;
+         </script>
+         <div class="tickets-loader">
+            <div class="text"><?php echo e($playing); ?>/<?php echo e($ticket->places); ?></div>
+            <div class="complete" style="width:<?php echo e(($playing / $ticket->places) * 100); ?>%"></div>
+         </div>
+         <div class="cls"></div>
+         <div class="tickets-places">
+           <?php foreach($places as $place): ?>
+           <?php if($place->user == null): ?>
+           <div class="one-place eas-fast" id="game-place-<?php echo e($place->place); ?>" onclick="setplace(<?php echo e($place->ticket); ?>,1, <?php echo e($place->place); ?>, <?php echo e($u->id); ?>);">
+              <span><?php echo e($place->place); ?><span>
+              </span></span>
+           </div>
+           <?php else: ?>
+           <div class="one-place" id="game-place-<?php echo e($place->place); ?>">
+               <a href="/profile/<?php echo e($place->user); ?>" target="_blank"><img src="<?php echo e($place->user_avatar); ?>"></a>
+            </div>
+           <?php endif; ?>
+
+           <?php endforeach; ?>
+            <div class="cls"></div>
+            <h3>Последний победитель</h3>
+            <div class="daily-winner">
+               <div class="daily-winner-in">
+                  <div class="b1">
+                     <a href="/profile/<?php echo e($winner->id); ?>"><img src="<?php echo e($winner->avatar); ?>" alt="<?php echo e($winner->username); ?>"></a>
+                  </div>
+                  <div class="b2">
+                     <a href="/profile/<?php echo e($winner->id); ?>"><?php echo e($winner->username); ?></a><br>
+                     <div class="tickets-round"><span>Победный билет: <?php echo e($v2->winning_ticket); ?></span></div>
+                  </div>
+                  <div class="cls"></div>
+               </div>
+               <div class="daily-winner-animation"></div>
+            </div>
+         </div>
+         <h3 class="tickets-h3">Недавние участники</h3>
+         <table class="table table-daily">
+            <tbody>
+         <?php foreach($taken as $place): ?>
+         <?php if($place->user == null): ?>
+
+         <?php else: ?>
+         <tr>
+            <td width="50" class="id">занял место <span class="ticket">#<?php echo e($place->place); ?></span></td>
+            <td width="60"><a href="/profile/<?php echo e($place->user); ?>"><img src="<?php echo e($place->user_avatar); ?>" alt="<?php echo e($place->username); ?>" class="userpic"></a></td>
+            <td><a href="/profile/<?php echo e($place->user); ?>"><?php echo e($place->username); ?></a></td>
+            <td width="160" class="text-right date"><?php echo e($place->updated_at); ?></td>
+         </tr>
+         <?php endif; ?>
+
+         <?php endforeach; ?>
+       </tbody>
+    </table>
+      </div>
+   </div>
+   <script>
+   function setplace(id,round,place,user){
+     $.ajax({
+       url: '/api/setplace',
+       type: 'post',
+       data: {id: id, round: round,place: place,user: user},
+       dataType: 'json',
+       success: function(rdata){
+         if (rdata.status == 'success') {
+           setTimeout(location.reload(), 2000);
+         }else{
+           smoke.alert(rdata.message);
+         }
+       }
+     });
+   }
+   </script>
+</main>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('case', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
